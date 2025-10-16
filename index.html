@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacket?</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery UI CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <!-- jQuery UI JS -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+  <!-- PWA manifest and theme color -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#578FCA">
+</head>
+
+<body>
+
+    <!-- QUESTION PAGE -->
+    <div id="question-page" class="page active">
+    <div class="center">
+        <h1 id="question-text">
+        <span id="question-prefix">Is it sunny in</span><br>
+        <span id="question-city">Venice?</span>
+        </h1>
+        <button id="check-weather-btn" class="invisible-button"></button>
+    </div>
+    </div>
+
+
+    <!-- WEATHER PAGE -->
+    <div id="weather-page" class="page">
+    <!-- HEADER: city name and coordinates -->
+    <div class="weather-header">
+        <h2 id="weather-city">Venice</h2>
+        <p id="weather-coords">Lat: 45.44 | Lon: 12.33</p>
+    </div>
+
+    <!-- WEATHER DATA -->
+    <div class="weather-container">
+        <!-- LEFT COLUMN -->
+        <div class="weather-left">
+        <h1 id="sunny-answer" class="sunny-answer">YES</h1>
+        <p id="weather-description" class="weather-description">Clear sky</p>
+        <p id="temperature" class="temperature">15 °C</p>
+        <p id="precipitation" class="precipitation">Precipitation: 0 mm</p>
+        <!-- <p id="temp-range" class="temp-range">Max: 16 °C | Min: 14 °C</p>-->
+        <p id="wind" class="wind">Wind: 3.5 m/s</p>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="weather-right">
+        <img
+            id="weather-icon"
+            src="icons/sun.png"
+            alt="Weather Icon"
+        />
+        </div>
+    </div>
+
+    <div class="weather-buttons">
+        <button id="back-btn" class="weather-btn">Back</button>
+        <button id="settings-btn" class="weather-btn">Settings</button>
+    </div>
+    </div>
+
+    <!-- SETTINGS PAGE -->
+    <div id="settings-page" class="page">
+    <div class="center">
+        <h2>Change Location</h2>
+        <input type="text" id="location-input" placeholder="Enter city name" />
+        <button id="save-location-btn">Check</button>
+    </div>
+
+    <div class="settings-bottom">
+        <button id="back-btn2" class="weather-btn">Back</button>
+    </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
