@@ -99,7 +99,6 @@ function getWeatherIcon(weatherId, isDaytime) {
   else if (weatherId >= 300 && weatherId < 400) iconFile = "rain_little";
   else if (weatherId >= 500 && weatherId < 502) iconFile = "rain";
   else if (weatherId >= 502 && weatherId < 600) iconFile = "rain_heavy";
-  else if (weatherId >= 600 && weatherId < 700) iconFile = "rain_heavy";
   else if (weatherId >= 600 && weatherId < 700) iconFile = "snow";
   else if (weatherId >= 700 && weatherId < 800) iconFile = "cloud";
   else if (weatherId === 800) iconFile = isDaytime ? "sun" : "night";
@@ -152,3 +151,4 @@ async function showWeatherPage() {
     showPage("#question-page");
   }
 }
+
