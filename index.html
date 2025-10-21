@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jacket?</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- jQuery UI CSS -->
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <!-- jQuery UI JS -->
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacket?</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#578FCA">
 
-  <!-- PWA manifest and theme color -->
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#578FCA">
+    <!-- SEO + Social Preview -->
+    <meta name="description" content="Check if it's sunny ir you should get a jacket">
+    <meta property="og:title" content="Jacket?">
+    <meta property="og:description" content="Simple weather app built by Nicola Quaia.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="icons/icon-128.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="icons/icon-128.png" type="image/png">
+  
+    <!-- CSS + JS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
 </head>
 
 <body>
@@ -23,7 +34,7 @@
     <div class="center">
         <h1 id="question-text">
         <span id="question-prefix">Is it sunny in</span><br>
-        <span id="question-city">Venice?</span>
+        <span id="question-city">Copenhagen?</span>
         </h1>
         <button id="check-weather-btn" class="invisible-button"></button>
     </div>
@@ -34,8 +45,8 @@
     <div id="weather-page" class="page">
     <!-- HEADER: city name and coordinates -->
     <div class="weather-header">
-        <h2 id="weather-city">Venice</h2>
-        <p id="weather-coords">Lat: 45.44 | Lon: 12.33</p>
+        <h2 id="weather-city">Copenhagen</h2>
+        <p id="weather-coords">Lat: 55.67 | Lon: 12.57</p>
     </div>
 
     <!-- WEATHER DATA -->
@@ -47,7 +58,7 @@
         <p id="temperature" class="temperature">15 °C</p>
         <p id="precipitation" class="precipitation">Precipitation: 0 mm</p>
         <!-- <p id="temp-range" class="temp-range">Max: 16 °C | Min: 14 °C</p>-->
-        <p id="wind" class="wind">Wind: 3.5 m/s</p>
+        <p id="wind" class="wind">Wind: 2.0 m/s</p>
         </div>
 
         <!-- RIGHT COLUMN -->

@@ -5,16 +5,18 @@
   "display": "standalone",
   "background_color": "#578FCA",
   "theme_color": "#578FCA",
+  "description": "Weather app that tells you if it's sunny, so you know whether to bring a jacket.",
+  
   "icons": [
     {
-      "src": "icons/sun.svg",
-      "sizes": "192x192",
-      "type": "image/svg+xml"
+      "src": "icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
     },
     {
-      "src": "icons/sun.svg",
+      "src": "icons/icon-512.png",
       "sizes": "512x512",
-      "type": "image/svg+xml"
+      "type": "image/png"
     }
   ]
 }
